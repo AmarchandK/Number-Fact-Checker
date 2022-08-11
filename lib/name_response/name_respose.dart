@@ -1,11 +1,4 @@
-import 'dart:convert';
-
 import 'package:freezed_annotation/freezed_annotation.dart';
-
-NameResponse nameResponseFromJson(String str) =>
-    NameResponse.fromJson(json.decode(str));
-String nameResponseToJson(NameResponse data) => json.encode(data.toJson());
-
 class NameResponse {
   NameResponse({
     this.text,
