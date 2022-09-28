@@ -1,6 +1,7 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-class NameResponse {
-  NameResponse({
+
+class Count {
+  Count({
     this.text,
     this.number,
     this.found,
@@ -15,7 +16,7 @@ class NameResponse {
   @JsonKey(name: 'type')
   String? type;
 
-  factory NameResponse.fromJson(Map<String, dynamic> json) => NameResponse(
+  factory Count.fromJson(Map<String, dynamic> json) => Count(
         text: json["text"],
         number: json["number"],
         found: json["found"],
